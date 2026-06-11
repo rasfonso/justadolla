@@ -1,40 +1,45 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #fefefe;
-  color: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-
-.container {
+/* Ensure header stays centered at the very top */
+header {
   text-align: center;
-  max-width: 400px;
-  padding: 2rem;
-  border: 2px dashed #ccc;
-  border-radius: 10px;
-  background: #fff;
+  padding: 20px;
+  background: #f9f9f9;
+  width: 100%;
+  display: block;
 }
 
-button {
-  background-color: #0070f3;
-  color: white;
-  border: none;
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 1rem;
+/* Force the main welcome headline to center */
+header h1 {
+  text-align: center;
+  margin: 0 auto;
 }
 
-button:hover {
-  background-color: #005bb5;
+/* Keep Featured Guides and section titles centered */
+main h2,
+main p {
+  text-align: center;
 }
 
-.note {
-  margin-top: 1rem;
-  font-size: 0.9rem;
-  color: #777;
+/* Product grid layout */
+.product-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Product card styling */
+.product-card {
+  flex: 0 1 300px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #555;
 }
