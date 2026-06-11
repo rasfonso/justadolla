@@ -5,16 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dolladee – Affiliate Hub</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Quick CSS reset for header */
+    header {
+      text-align: center;
+      padding: 20px;
+      background: #f9f9f9;
+      width: 100%;
+      display: block; /* ensures it’s not affected by flex */
+    }
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2em;
+    }
+    .product-grid {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .product-card {
+      flex: 0 1 300px;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
   <!-- Top Welcome Section -->
-  <header style="text-align:center; padding:20px; background:#f9f9f9;">
+  <header>
     <h1>Welcome to Dolladee</h1>
     <p>Discover tools, products, and resources to improve your financial health and lifestyle.</p>
   </header>
 
   <!-- Main Content -->
-  <main style="max-width:1000px; margin:auto; padding:2em;">
+  <main>
     <h2 style="text-align:center;">Featured Guides</h2>
     <p style="text-align:center;">
       Explore our top picks for financial tools and lifestyle products that can help you save money and live better.
@@ -23,10 +51,10 @@
     <!-- Affiliate Picks Showcase -->
     <div style="margin-top:40px;">
       <h2 style="text-align:center;">🔥 Top Affiliate Picks</h2>
-      <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center;">
+      <div class="product-grid">
 
         <!-- Product 1 -->
-        <div style="flex:0 1 300px; border:1px solid #ddd; padding:15px; border-radius:8px;">
+        <div class="product-card">
           <h3>Fitness Tracker</h3>
           <a href="https://www.amazon.com/dp/B08N5WRWNW?tag=alfasnapper0e-20" target="_blank">
             <img src="https://m.media-amazon.com/images/I/61+Q6Rh3OQL._AC_SL1500_.jpg" alt="Fitness Tracker" style="width:100%; height:auto; border-radius:6px;">
@@ -36,7 +64,7 @@
         </div>
 
         <!-- Product 2 -->
-        <div style="flex:0 1 300px; border:1px solid #ddd; padding:15px; border-radius:8px;">
+        <div class="product-card">
           <h3>Noise-Cancelling Headphones</h3>
           <a href="https://www.amazon.com/dp/B07FZ8S74R?tag=alfasnapper0e-20" target="_blank">
             <img src="https://m.media-amazon.com/images/I/71o8Q5XJS5L._AC_SL1500_.jpg" alt="Headphones" style="width:100%; height:auto; border-radius:6px;">
@@ -46,7 +74,7 @@
         </div>
 
         <!-- Product 3 -->
-        <div style="flex:0 1 300px; border:1px solid #ddd; padding:15px; border-radius:8px;">
+        <div class="product-card">
           <h3>Budget-Friendly Laptop</h3>
           <a href="https://www.amazon.com/dp/B0096PFTG1?tag=alfasnapper0e-20" target="_blank">
             <img src="https://m.media-amazon.com/images/I/81m+3k4oGWL._AC_SL1500_.jpg" alt="Laptop" style="width:100%; height:auto; border-radius:6px;">
@@ -72,4 +100,5 @@
   </footer>
 </body>
 </html>
+
 
