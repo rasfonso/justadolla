@@ -5,27 +5,28 @@
   box-sizing: border-box;
 }
 
+/* Body styling */
 body {
-  display: block;   /* cancel any flex/grid */
+  display: block;
   width: 100%;
   margin: 0 auto;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* Header fix */
+/* Header */
 header {
-  text-align: center !important;
-  width: 100% !important;
-  display: block !important;
-  float: none !important;
-  clear: both !important;       /* force new line */
-  position: relative !important;
+  text-align: center;
+  padding: 30px 20px;
+  background: #ffffff;
+  border-bottom: 2px solid #eee;
 }
 
-/* Headline */
 header h1 {
-  text-align: center !important;
-  margin: 0 auto;
+  font-size: 2.2em;
+  color: #2c3e50;
 }
 
 /* Main content */
@@ -35,9 +36,17 @@ main {
   padding: 2em;
 }
 
-main h2,
+main h2 {
+  text-align: center;
+  font-size: 1.8em;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
 main p {
   text-align: center;
+  margin-bottom: 20px;
+  color: #555;
 }
 
 /* Product grid */
@@ -52,19 +61,46 @@ main p {
 .product-card {
   flex: 0 1 300px;
   border: 1px solid #ddd;
-  padding: 15px;
-  border-radius: 8px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #fff;
   text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Footer fix */
-footer {
-  text-align: center !important;
-  width: 100% !important;
-  display: block !important;
-  float: none !important;
-  clear: both !important;       /* force new line */
-  margin-top: 40px;
-  font-size: 14px;
-  color: #555;
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+
+.product-card h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  color: #666;
+  font-size: 0.95em;
+}
+
+/* Links */
+a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  font-size: 14px;
+  color: #777;
+  background: #f9f9f9;
+  border-top: 2px solid #eee;
+}
+
