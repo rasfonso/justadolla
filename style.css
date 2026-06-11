@@ -1,19 +1,42 @@
-/* Ensure header stays centered at the very top */
-header {
-  text-align: center;
-  padding: 20px;
-  background: #f9f9f9;
-  width: 100%;
-  display: block;
+/* Reset all default margins/paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Force the main welcome headline to center */
+/* Body layout */
+body {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Header fix */
+header {
+  text-align: center !important;
+  padding: 20px;
+  background: #f9f9f9;
+  width: 100% !important;
+  display: block !important;
+  float: none !important;       /* cancel any float */
+  position: relative !important; /* cancel any absolute positioning */
+}
+
+/* Ensure the headline itself is centered */
 header h1 {
-  text-align: center;
+  text-align: center !important;
   margin: 0 auto;
 }
 
-/* Keep Featured Guides and section titles centered */
+/* Featured Guides section */
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2em;
+}
+
 main h2,
 main p {
   text-align: center;
