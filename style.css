@@ -120,3 +120,45 @@ footer {
   border-top: 2px solid #eee;
 }
 
+/* Reset defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 30px 20px;
+  background: #ffffff;
+  border-bottom: 2px solid #eee;
+}
+/* Navigation styling */
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: #2980b9;              /* same blue as CTA */
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #1f6391;              /* darker blue on hover */
+  text-decoration: underline;  /* subtle hover effect */
+}
